@@ -1,4 +1,4 @@
-/* line 1, ../sass/style.scss */
+/* line 5, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,29 +15,62 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
-  box-sizing: border-box;
 }
 
-/**
- * HTML5 display-role reset for older browsers
- */
-/* line 25, ../sass/style.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 29, ../sass/style.scss */
-body {
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/style.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /**
@@ -46,26 +79,26 @@ ol, ul {
 /**
  * Start of Custom Styles
  */
-/* line 41, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 body {
   /*background-color: LightGray;*/
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 div {
   /*border: 1px solid Chocolate;*/
 }
 
-/* line 49, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .content {
   padding: 0 0.938rem;
   margin: 0 auto;
   min-width: 37.5rem;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 :focus {
   outline: none;
 }
@@ -73,7 +106,7 @@ div {
 /**
  * Navigation Section
  */
-/* line 61, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .top-navigation {
   background-color: #fff;
   position: fixed;
@@ -82,17 +115,17 @@ div {
   z-index: 9999;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .top-navigation > .content {
   height: 4.375rem;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .top-navigation .logo {
   height: 4.375rem;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .top-navigation .links {
   float: right;
   color: #838994;
@@ -100,19 +133,19 @@ div {
   margin-top: 1.7rem;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .top-navigation .links li {
   display: inline-block;
   margin-left: 1.563rem;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .top-navigation .links li.active {
   color: #4c5058;
   font-weight: 500;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .top-navigation .links li:hover {
   cursor: pointer;
   color: #333333;
@@ -121,7 +154,7 @@ div {
 /**
  * Introduction Section
  */
-/* line 96, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .introduction {
   background-image: url("../img/first-background.jpg");
   background-position: center bottom;
@@ -131,7 +164,7 @@ div {
   overflow: auto;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .introduction h1,
 .introduction h3 {
   color: white;
@@ -139,13 +172,13 @@ div {
   font-weight: 300;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .introduction h1 {
   margin-top: 17.5rem;
   font-size: 3.125rem;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .introduction h3 {
   margin-top: 1.25rem;
   font-size: 1.563rem;
@@ -154,14 +187,14 @@ div {
 /**
  * The buttons
  */
-/* line 121, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .introduction .buttons {
   color: white;
   text-align: center;
   margin-top: 1.563rem;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .introduction .half {
   width: 49%;
   padding: 0 0.938rem;
@@ -174,14 +207,14 @@ div {
 /**
  * The Three Case Images
  */
-/* line 138, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .cases {
   background-color: #fff;
   overflow: hidden;
   padding-bottom: 5rem;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .cases .content {
   margin-top: 7.875rem;
   padding: none;
@@ -189,27 +222,27 @@ div {
   text-align: center;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .cases h2 {
   font-size: 2.75rem;
   margin: 1.625rem 0 3.125rem;
   font-weight: 300;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .cases .devices > li {
   width: 33.3333333%;
   float: left;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .cases .devices h3 {
   font-weight: 400;
   font-size: 1.563rem;
   margin: 2.5rem 0px 1.875rem;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .cases .devices p {
   font-weight: 300;
   font-size: 1.313rem;
@@ -218,7 +251,7 @@ div {
 /**
  * Footer
  */
-/* line 171, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .social {
   background-color: #fff;
   overflow: auto;
@@ -226,14 +259,14 @@ div {
   text-align: center;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .social hr {
   border: 0;
   border-top: 1px solid #eaebec;
   margin: 1.313rem 0;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .social .icons > li {
   border-radius: 1.25rem;
   width: 2.5rem;
@@ -245,27 +278,27 @@ div {
   text-align: center;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .social .icons > li:hover {
   cursor: pointer;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .social .twitter {
   color: #55acee;
 }
 
-/* line 198, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .social .facebook {
   color: #4c66a4;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .social .instagram {
   color: #3f729b;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .social .copy {
   font-size: 0.9rem;
   font-weight: 300;
@@ -276,19 +309,19 @@ div {
  * Responsive Design
  */
 @media (min-width: 48rem) {
-  /* line 214, ../sass/style.scss */
+  /* line 189, ../sass/style.scss */
   .content {
     width: 46rem;
   }
 }
 @media (min-width: 62rem) {
-  /* line 219, ../sass/style.scss */
+  /* line 194, ../sass/style.scss */
   .content {
     width: 60rem;
   }
 }
 @media (min-width: 75rem) {
-  /* line 224, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .content {
     width: 60%;
   }
@@ -314,7 +347,7 @@ div {
 /**
  * button
  */
-/* line 244, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 button {
   width: 9.688rem;
   background-color: #f15a29;
@@ -327,7 +360,7 @@ button {
   font-size: 1.125rem;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 button:hover {
   background-color: #d9400e;
   border-color: #cf3d0e;
