@@ -1,4 +1,5 @@
-@import 'compass/reset';
+@import "compass";
+@import "compass/reset";
 
 html {
   box-sizing: border-box;
@@ -10,16 +11,25 @@ html {
 /**
  * End of Reset
  */
+
+$text-color: #1d1e21;
+$background-color: white;
+
+$border-color: #DDD;
+
+$secondary-text-color: #838994;
+$secondary-text-hover: #333;
+$secondary-text-active: #4c5058;
+
+$accent-color: #f15a29;
+$accent-color-hover: #d9400e;
+
 /**
  * Start of Custom Styles
  */
 body {
-    /*background-color: LightGray;*/
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-div {
-    /*border: 1px solid Chocolate;*/
 }
 .content {
     padding: 0 0.938rem;
@@ -34,10 +44,10 @@ div {
  * Navigation Section
  */
 .top-navigation {
-    background-color: #fff;
+    background-color: $background-color;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid $border-color;
     z-index: 9999;
 }
 .top-navigation > .content {
@@ -48,7 +58,7 @@ div {
 }
 .top-navigation .links {
     float: right;
-    color: #838994;
+    color: $secondary-text-color;
     font-size: 1.04rem;
     margin-top: 1.7rem;
 }
@@ -57,19 +67,19 @@ div {
     margin-left: 1.563rem;
 }
 .top-navigation .links li.active {
-    color: #4c5058;
+    color: $secondary-text-active;
     font-weight: 500;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
-    color: #333333;
+    color: $secondary-text-hover;
 }
 
 /**
  * Introduction Section
  */
 .introduction {
-    background-image: url('../img/first-background.jpg');
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/10012/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +88,7 @@ div {
 }
 .introduction h1,
 .introduction h3 {
-    color: white;
+    color: $background-color;
     text-align: center;
     font-weight: 300;
 }
@@ -94,7 +104,7 @@ div {
  * The buttons
  */
 .introduction .buttons {
-    color: white;
+    color: $background-color;
     text-align: center;
     margin-top: 1.563rem;
 }
@@ -111,14 +121,14 @@ div {
  * The Three Case Images
  */
 .cases {
-    background-color: #fff;
+    background-color: $background-color;
     overflow: hidden;
     padding-bottom: 5rem;
 }
 .cases .content {
     margin-top: 7.875rem;
     padding: none;
-    color: #1d1e21;
+    color: $text-color;
     text-align: center;
 }
 .cases h2 {
@@ -144,14 +154,14 @@ div {
  * Footer
  */
 .social {
-    background-color: #fff;
+    background-color: $background-color;
     overflow: auto;
     padding-bottom: 9.375rem;
     text-align: center;
 }
 .social hr {
     border: 0;
-    border-top: 1px solid #eaebec;
+    border-top: 1px solid $border-color;
     margin: 1.313rem 0;
 }
 .social .icons > li {
@@ -160,7 +170,7 @@ div {
     height: 2.5rem;
     display: inline-block;
     margin: 1.25rem 5px;
-    border: 1px solid #eaebec;
+    border: 1px solid $border-color;
     padding: 0.625rem 0;
     text-align: center;
 }
@@ -179,7 +189,7 @@ div {
 .social .copy {
     font-size: 0.9rem;
     font-weight: 300;
-    color: #838994;
+    color: $secondary-text-color;
 }
 
 /**
@@ -218,18 +228,18 @@ div {
  */
 button {
     width: 9.688rem;
-    background-color: #f15a29;
-    border-color: #f15a29;
+    background-color: $accent-color;
+    border-color: $accent-color;
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    color: white;
+    color: $background-color;
     font-size: 1.125rem;
 }
 button:hover {
-    background-color: #d9400e;
-    border-color: #cf3d0e;
+    background-color: $accent-color-hover;
+    border-color: $accent-color-hover;
     cursor: pointer;
 }
 
