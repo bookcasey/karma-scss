@@ -12,6 +12,10 @@ html {
  * End of Reset
  */
 
+// Variables
+
+//   Colors
+
 $text-color: #1d1e21;
 $background-color: white;
 
@@ -24,6 +28,14 @@ $secondary-text-active: #4c5058;
 $accent-color: #f15a29;
 $accent-color-hover: #d9400e;
 
+//   Font Sizes
+
+$small: 1.04rem;
+$medium: 1.125rem;
+$large: 3.125rem;
+$spacing: 0.938rem;
+
+
 /**
  * Start of Custom Styles
  */
@@ -32,7 +44,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 .content {
-    padding: 0 0.938rem;
+    padding: 0 $spacing;
     margin: 0 auto;
     min-width: 37.5rem;
 }
@@ -59,12 +71,12 @@ body {
 .top-navigation .links {
     float: right;
     color: $secondary-text-color;
-    font-size: 1.04rem;
+    font-size: $small;
     margin-top: 1.7rem;
 }
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 1.563rem;
+    margin-left: $large/2;
 }
 .top-navigation .links li.active {
     color: $secondary-text-active;
@@ -83,7 +95,7 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45.938rem;
+    height: 45rem + $spacing;
     overflow: auto;
 }
 .introduction h1,
@@ -94,11 +106,12 @@ body {
 }
 .introduction h1 {
     margin-top: 17.5rem;
-    font-size: 3.125rem;
+    font-size: $large;
 }
+
 .introduction h3 {
     margin-top: 1.25rem;
-    font-size: 1.563rem;
+    font-size: $large/2;
 }
 /**
  * The buttons
@@ -106,14 +119,14 @@ body {
 .introduction .buttons {
     color: $background-color;
     text-align: center;
-    margin-top: 1.563rem;
+    margin-top: $large/2;
 }
 .introduction .half {
     width: 49%;
-    padding: 0 0.938rem;
+    padding: 0 $spacing;
     display: inline-block;
     vertical-align: bottom;
-    font-size: 1.125rem;
+    font-size: $medium;
     line-height: 1.2;
 }
 
@@ -133,7 +146,7 @@ body {
 }
 .cases h2 {
     font-size: 2.75rem;
-    margin: 1.625rem 0 3.125rem;
+    margin: 1.625rem 0 $large;
     font-weight: 300;
 }
 .cases .devices > li {
@@ -142,7 +155,7 @@ body {
 }
 .cases .devices h3 {
     font-weight: 400;
-    font-size: 1.563rem;
+    font-size: $large/2;
     margin: 2.5rem 0px 1.875rem;
 }
 .cases .devices p {
@@ -235,7 +248,7 @@ button {
     border-radius: 4px;
     padding: 1rem 1.5rem;
     color: $background-color;
-    font-size: 1.125rem;
+    font-size: $medium;
 }
 button:hover {
     background-color: $accent-color-hover;
