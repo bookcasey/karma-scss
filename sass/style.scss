@@ -1,40 +1,9 @@
-// Reset
-
 @import "compass";
-@import "compass/reset";
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+@import "reset";
 
-// Variables
-
-//   Colors
-
-$text-color: #1d1e21;
-$background-color: white;
-
-$border-color: #DDD;
-
-$secondary-text-color: #838994;
-$secondary-text-hover: #333;
-$secondary-text-active: #4c5058;
-
-$accent-color: #f15a29;
-$accent-color-hover: #d9400e;
-
-//   Font Sizes
-
-$small: 1.04rem;
-$medium: 1.125rem;
-$large: 3.125rem;
-$spacing: 0.938rem;
-
-
-// Custom Styles
+@import "variables";
+@import "mixins";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -185,12 +154,12 @@ body {
     .icons > li {
         border-radius: 1.25rem;
         width: 2.5rem;
-    height: 2.5rem;
-    display: inline-block;
-    margin: 1.25rem 5px;
-    border: 1px solid $border-color;
-    padding: 0.625rem 0;
-    text-align: center;
+        height: 2.5rem;
+        display: inline-block;
+        margin: 1.25rem 5px;
+        border: 1px solid $border-color;
+        padding: 0.625rem 0;
+        text-align: center;
     }
 
     .social {
@@ -217,31 +186,11 @@ body {
 
 // Responsive
 
-@mixin media-query($min-width, $width) {
-    @media (min-width: 48rem) {
-        .content {
-            width: 46rem;
-        }
-    }
-}
-
 @include media-query(48rem, 46rem);
 @include media-query(62rem, 60rem);
 @include media-query(75rem, 60%);
 
-@mixin bounce($margin) {
-   
-    // Chrome, Safari, Opera 
-    @-webkit-keyframes bounce {
-        0%, 100% {margin-top: 0px;}
-        50% {margin-top: $margin;}
-    }
-    // Standard syntax
-    @keyframes bounce {
-        0%, 100% {margin-top: 0px;}
-        50% {margin-top: $margin;}
-    }
-}
+// Animation
 
 @include bounce(2em);
 
@@ -264,4 +213,3 @@ button {
         cursor: pointer;
     }
 }
-

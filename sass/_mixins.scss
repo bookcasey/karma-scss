@@ -1,0 +1,21 @@
+@mixin media-query($min-width, $width) {
+    @media (min-width: 48rem) {
+        .content {
+            width: 46rem;
+        }
+    }
+}
+
+@mixin bounce($margin) {
+   
+    // Chrome, Safari, Opera 
+    @-webkit-keyframes bounce {
+        0%, 100% {margin-top: 0px;}
+        50% {margin-top: $margin;}
+    }
+    // Standard syntax
+    @keyframes bounce {
+        0%, 100% {margin-top: 0px;}
+        50% {margin-top: $margin;}
+    }
+}
