@@ -1,3 +1,5 @@
+// Reset
+
 @import "compass";
 @import "compass/reset";
 
@@ -7,10 +9,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/**
- * End of Reset
- */
 
 // Variables
 
@@ -36,9 +34,8 @@ $large: 3.125rem;
 $spacing: 0.938rem;
 
 
-/**
- * Start of Custom Styles
- */
+// Custom Styles
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -52,44 +49,46 @@ body {
     outline: none;
 }
 
-/**
- * Navigation Section
- */
+// Navigation
+
 .top-navigation {
     background-color: $background-color;
     position: fixed;
     width: 100%;
     border-bottom: 1px solid $border-color;
     z-index: 9999;
-}
-.top-navigation > .content {
-    height: 4.375rem;
-}
-.top-navigation .logo {
-    height: 4.375rem;
-}
-.top-navigation .links {
+
+    & > .content {
+        height: 4.375rem;
+    }
+
+    .logo {
+        height: 4.375rem;
+    }
+
+    .links {
     float: right;
     color: $secondary-text-color;
     font-size: $small;
     margin-top: 1.7rem;
-}
-.top-navigation .links li {
-    display: inline-block;
-    margin-left: $large/2;
-}
-.top-navigation .links li.active {
-    color: $secondary-text-active;
-    font-weight: 500;
-}
-.top-navigation .links li:hover {
-    cursor: pointer;
-    color: $secondary-text-hover;
+    
+        li {
+            display: inline-block;
+            margin-left: $large/2;
+            &.active {
+                color: $secondary-text-active;
+                font-weight: 500;
+            }
+            &:hover {
+                cursor: pointer;
+                color: $secondary-text-hover;
+            }
+        }
+    }
 }
 
-/**
- * Introduction Section
- */
+// Introduction
+
 .introduction {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/10012/first-background.jpg');
     background-position: center bottom;
@@ -97,37 +96,39 @@ body {
     background-size: cover;
     height: 45rem + $spacing;
     overflow: auto;
-}
-.introduction h1,
-.introduction h3 {
+    
+    h1, h3 {
     color: $background-color;
     text-align: center;
     font-weight: 300;
-}
-.introduction h1 {
-    margin-top: 17.5rem;
-    font-size: $large;
-}
+    }
 
-.introduction h3 {
-    margin-top: 1.25rem;
-    font-size: $large/2;
-}
+    h1 {
+        margin-top: 17.5rem;
+        font-size: $large;
+    }
+
+    h3 {
+        margin-top: 1.25rem;
+        font-size: $large/2;
+    }
 /**
  * The buttons
  */
-.introduction .buttons {
-    color: $background-color;
-    text-align: center;
-    margin-top: $large/2;
-}
-.introduction .half {
-    width: 49%;
-    padding: 0 $spacing;
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: $medium;
-    line-height: 1.2;
+    .buttons {
+        color: $background-color;
+        text-align: center;
+        margin-top: $large/2;
+    }
+
+    .half {
+        width: 49%;
+        padding: 0 $spacing;
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: $medium;
+        line-height: 1.2;
+    }
 }
 
 /**
@@ -137,30 +138,35 @@ body {
     background-color: $background-color;
     overflow: hidden;
     padding-bottom: 5rem;
-}
-.cases .content {
-    margin-top: 7.875rem;
-    padding: none;
-    color: $text-color;
-    text-align: center;
-}
-.cases h2 {
-    font-size: 2.75rem;
-    margin: 1.625rem 0 $large;
-    font-weight: 300;
-}
-.cases .devices > li {
-    width: 33.3333333%;
-    float:left;
-}
-.cases .devices h3 {
-    font-weight: 400;
-    font-size: $large/2;
-    margin: 2.5rem 0px 1.875rem;
-}
-.cases .devices p {
-    font-weight: 300;
-    font-size: 1.313rem;
+
+    .content {
+        margin-top: 7.875rem;
+        padding: none;
+        color: $text-color;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+        margin: 1.625rem 0 $large;
+        font-weight: 300;
+    }
+
+    .devices > li {
+        width: 33.3333333%;
+        float:left;
+    }
+
+    .devices h3 {
+        font-weight: 400;
+        font-size: $large/2;
+        margin: 2.5rem 0px 1.875rem;
+    }
+
+    .devices p {
+        font-weight: 300;
+        font-size: 1.313rem;
+    }
 }
 
 /**
@@ -171,43 +177,47 @@ body {
     overflow: auto;
     padding-bottom: 9.375rem;
     text-align: center;
-}
-.social hr {
-    border: 0;
-    border-top: 1px solid $border-color;
-    margin: 1.313rem 0;
-}
-.social .icons > li {
-    border-radius: 1.25rem;
-    width: 2.5rem;
+    
+    hr {
+        border: 0;
+        border-top: 1px solid $border-color;
+        margin: 1.313rem 0;
+    }
+
+    .icons > li {
+        border-radius: 1.25rem;
+        width: 2.5rem;
     height: 2.5rem;
     display: inline-block;
     margin: 1.25rem 5px;
     border: 1px solid $border-color;
     padding: 0.625rem 0;
     text-align: center;
-}
-.social .icons > li:hover {
-    cursor: pointer;
-}
-.social .twitter {
-    color: #55acee;
-}
-.social .facebook {
-    color: #4c66a4;
-}
-.social .instagram {
-    color: #3f729b;
-}
-.social .copy {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: $secondary-text-color;
+    }
+
+    .social {
+        .icons > li:hover {
+            cursor: pointer;
+        }
+        .copy {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: $secondary-text-color;
+        }
+    }
+
+    .twitter {
+        color: #55acee;
+    }
+    .facebook {
+        color: #4c66a4;
+    }
+    .instagram {
+        color: #3f729b;
+    }
 }
 
-/**
- * Responsive Design
- */
+// Responsive
 @media (min-width: 48rem) {
     .content {
         width: 46rem;
@@ -235,10 +245,8 @@ body {
     50% {margin-top: 2rem;}
 }
 
+// Button
 
-/**
- * button
- */
 button {
     width: 9.688rem;
     background-color: $accent-color;
@@ -249,10 +257,11 @@ button {
     padding: 1rem 1.5rem;
     color: $background-color;
     font-size: $medium;
-}
-button:hover {
-    background-color: $accent-color-hover;
-    border-color: $accent-color-hover;
-    cursor: pointer;
+
+    &:hover {
+        background-color: $accent-color-hover;
+        border-color: $accent-color-hover;
+        cursor: pointer;
+    }
 }
 

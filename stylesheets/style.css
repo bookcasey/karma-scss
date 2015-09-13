@@ -63,44 +63,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/**
- * End of Reset
- */
-/**
- * Start of Custom Styles
- */
-/* line 30, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .content {
   padding: 0 0.938rem;
   margin: 0 auto;
   min-width: 37.5rem;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 :focus {
   outline: none;
 }
 
-/**
- * Navigation Section
- */
-/* line 46, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .top-navigation {
   background-color: white;
   position: fixed;
@@ -108,47 +99,38 @@ body {
   border-bottom: 1px solid #DDD;
   z-index: 9999;
 }
-
-/* line 53, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .top-navigation > .content {
   height: 4.375rem;
 }
-
-/* line 56, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .top-navigation .logo {
   height: 4.375rem;
 }
-
-/* line 59, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .top-navigation .links {
   float: right;
   color: #838994;
   font-size: 1.04rem;
   margin-top: 1.7rem;
 }
-
-/* line 65, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .top-navigation .links li {
   display: inline-block;
-  margin-left: 1.563rem;
+  margin-left: 1.5625rem;
 }
-
-/* line 69, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .top-navigation .links li.active {
   color: #4c5058;
   font-weight: 500;
 }
-
-/* line 73, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .top-navigation .links li:hover {
   cursor: pointer;
   color: #333;
 }
 
-/**
- * Introduction Section
- */
-/* line 81, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .introduction {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/10012/first-background.jpg");
   background-position: center bottom;
@@ -156,39 +138,33 @@ body {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
+  /**
+   * The buttons
+   */
 }
-
-/* line 89, ../sass/style.scss */
-.introduction h1,
-.introduction h3 {
+/* line 100, ../sass/style.scss */
+.introduction h1, .introduction h3 {
   color: white;
   text-align: center;
   font-weight: 300;
 }
-
-/* line 95, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .introduction h1 {
   margin-top: 17.5rem;
   font-size: 3.125rem;
 }
-
-/* line 99, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .introduction h3 {
   margin-top: 1.25rem;
-  font-size: 1.563rem;
+  font-size: 1.5625rem;
 }
-
-/**
- * The buttons
- */
-/* line 106, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .introduction .buttons {
   color: white;
   text-align: center;
-  margin-top: 1.563rem;
+  margin-top: 1.5625rem;
 }
-
-/* line 111, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .introduction .half {
   width: 49%;
   padding: 0 0.938rem;
@@ -201,42 +177,37 @@ body {
 /**
  * The Three Case Images
  */
-/* line 123, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .cases {
   background-color: white;
   overflow: hidden;
   padding-bottom: 5rem;
 }
-
-/* line 128, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .cases .content {
   margin-top: 7.875rem;
   padding: none;
   color: #1d1e21;
   text-align: center;
 }
-
-/* line 134, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .cases h2 {
   font-size: 2.75rem;
   margin: 1.625rem 0 3.125rem;
   font-weight: 300;
 }
-
-/* line 139, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .cases .devices > li {
   width: 33.3333333%;
   float: left;
 }
-
-/* line 143, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .cases .devices h3 {
   font-weight: 400;
-  font-size: 1.563rem;
+  font-size: 1.5625rem;
   margin: 2.5rem 0px 1.875rem;
 }
-
-/* line 148, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .cases .devices p {
   font-weight: 300;
   font-size: 1.313rem;
@@ -245,22 +216,20 @@ body {
 /**
  * Footer
  */
-/* line 156, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .social {
   background-color: white;
   overflow: auto;
   padding-bottom: 9.375rem;
   text-align: center;
 }
-
-/* line 162, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .social hr {
   border: 0;
   border-top: 1px solid #DDD;
   margin: 1.313rem 0;
 }
-
-/* line 167, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .social .icons > li {
   border-radius: 1.25rem;
   width: 2.5rem;
@@ -271,51 +240,43 @@ body {
   padding: 0.625rem 0;
   text-align: center;
 }
-
-/* line 177, ../sass/style.scss */
-.social .icons > li:hover {
+/* line 199, ../sass/style.scss */
+.social .social .icons > li:hover {
   cursor: pointer;
 }
-
-/* line 180, ../sass/style.scss */
-.social .twitter {
-  color: #55acee;
-}
-
-/* line 183, ../sass/style.scss */
-.social .facebook {
-  color: #4c66a4;
-}
-
-/* line 186, ../sass/style.scss */
-.social .instagram {
-  color: #3f729b;
-}
-
-/* line 189, ../sass/style.scss */
-.social .copy {
+/* line 202, ../sass/style.scss */
+.social .social .copy {
   font-size: 0.9rem;
   font-weight: 300;
   color: #838994;
 }
+/* line 209, ../sass/style.scss */
+.social .twitter {
+  color: #55acee;
+}
+/* line 212, ../sass/style.scss */
+.social .facebook {
+  color: #4c66a4;
+}
+/* line 215, ../sass/style.scss */
+.social .instagram {
+  color: #3f729b;
+}
 
-/**
- * Responsive Design
- */
 @media (min-width: 48rem) {
-  /* line 199, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .content {
     width: 46rem;
   }
 }
 @media (min-width: 62rem) {
-  /* line 204, ../sass/style.scss */
+  /* line 227, ../sass/style.scss */
   .content {
     width: 60rem;
   }
 }
 @media (min-width: 75rem) {
-  /* line 209, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   .content {
     width: 60%;
   }
@@ -338,10 +299,7 @@ body {
     margin-top: 2rem;
   }
 }
-/**
- * button
- */
-/* line 229, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 button {
   width: 9.688rem;
   background-color: #f15a29;
@@ -353,8 +311,7 @@ button {
   color: white;
   font-size: 1.125rem;
 }
-
-/* line 240, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 button:hover {
   background-color: #d9400e;
   border-color: #d9400e;
