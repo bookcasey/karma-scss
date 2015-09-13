@@ -264,24 +264,23 @@ body {
 }
 
 @media (min-width: 48rem) {
-  /* line 222, ../sass/style.scss */
+  /* line 224, ../sass/style.scss */
   .content {
     width: 46rem;
   }
 }
-@media (min-width: 62rem) {
-  /* line 227, ../sass/style.scss */
+@media (min-width: 48rem) {
+  /* line 224, ../sass/style.scss */
   .content {
-    width: 60rem;
+    width: 46rem;
   }
 }
-@media (min-width: 75rem) {
-  /* line 232, ../sass/style.scss */
+@media (min-width: 48rem) {
+  /* line 224, ../sass/style.scss */
   .content {
-    width: 60%;
+    width: 46rem;
   }
 }
-/* Chrome, Safari, Opera */
 @-webkit-keyframes bounce {
   0%, 100% {
     margin-top: 0px;
@@ -290,7 +289,6 @@ body {
     margin-top: 2rem;
   }
 }
-/* Standard syntax */
 @keyframes bounce {
   0%, 100% {
     margin-top: 0px;
@@ -299,7 +297,7 @@ body {
     margin-top: 2rem;
   }
 }
-/* line 250, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 button {
   width: 9.688rem;
   background-color: #f15a29;
@@ -311,7 +309,7 @@ button {
   color: white;
   font-size: 1.125rem;
 }
-/* line 261, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 button:hover {
   background-color: #d9400e;
   border-color: #d9400e;
