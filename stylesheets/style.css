@@ -138,9 +138,6 @@ body {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
-  /**
-   * The buttons
-   */
 }
 /* line 100, ../sass/style.scss */
 .introduction h1, .introduction h3 {
@@ -174,62 +171,56 @@ body {
   line-height: 1.2;
 }
 
-/**
- * The Three Case Images
- */
-/* line 137, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .cases {
   background-color: white;
   overflow: hidden;
   padding-bottom: 5rem;
 }
-/* line 142, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .cases .content {
   margin-top: 7.875rem;
   padding: none;
   color: #1d1e21;
   text-align: center;
 }
-/* line 149, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .cases h2 {
   font-size: 2.75rem;
   margin: 1.625rem 0 3.125rem;
   font-weight: 300;
 }
-/* line 155, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .cases .devices > li {
   width: 33.3333333%;
   float: left;
 }
-/* line 160, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .cases .devices h3 {
   font-weight: 400;
   font-size: 1.5625rem;
   margin: 2.5rem 0px 1.875rem;
 }
-/* line 166, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .cases .devices p {
   font-weight: 300;
   font-size: 1.313rem;
 }
 
-/**
- * Footer
- */
-/* line 175, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .social {
   background-color: white;
   overflow: auto;
   padding-bottom: 9.375rem;
   text-align: center;
 }
-/* line 181, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .social hr {
   border: 0;
   border-top: 1px solid #DDD;
   margin: 1.313rem 0;
 }
-/* line 187, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .social .icons > li {
   border-radius: 1.25rem;
   width: 2.5rem;
@@ -240,43 +231,43 @@ body {
   padding: 0.625rem 0;
   text-align: center;
 }
-/* line 199, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .social .social .icons > li:hover {
   cursor: pointer;
 }
-/* line 202, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .social .social .copy {
   font-size: 0.9rem;
   font-weight: 300;
   color: #838994;
 }
-/* line 209, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .social .twitter {
   color: #55acee;
 }
-/* line 212, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .social .facebook {
   color: #4c66a4;
 }
-/* line 215, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .social .instagram {
   color: #3f729b;
 }
 
 @media (min-width: 48rem) {
-  /* line 224, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .content {
     width: 46rem;
   }
 }
 @media (min-width: 48rem) {
-  /* line 224, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .content {
     width: 46rem;
   }
 }
 @media (min-width: 48rem) {
-  /* line 224, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .content {
     width: 46rem;
   }
@@ -286,7 +277,7 @@ body {
     margin-top: 0px;
   }
   50% {
-    margin-top: 2rem;
+    margin-top: 2em;
   }
 }
 @keyframes bounce {
@@ -294,10 +285,10 @@ body {
     margin-top: 0px;
   }
   50% {
-    margin-top: 2rem;
+    margin-top: 2em;
   }
 }
-/* line 247, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 button {
   width: 9.688rem;
   background-color: #f15a29;
@@ -309,7 +300,7 @@ button {
   color: white;
   font-size: 1.125rem;
 }
-/* line 258, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 button:hover {
   background-color: #d9400e;
   border-color: #d9400e;

@@ -112,9 +112,9 @@ body {
         margin-top: 1.25rem;
         font-size: $large/2;
     }
-/**
- * The buttons
- */
+
+// Buttons
+
     .buttons {
         color: $background-color;
         text-align: center;
@@ -131,9 +131,8 @@ body {
     }
 }
 
-/**
- * The Three Case Images
- */
+// Three Case Images
+
 .cases {
     background-color: $background-color;
     overflow: hidden;
@@ -169,9 +168,8 @@ body {
     }
 }
 
-/**
- * Footer
- */
+// Footer
+
 .social {
     background-color: $background-color;
     overflow: auto;
@@ -231,16 +229,21 @@ body {
 @include media-query(62rem, 60rem);
 @include media-query(75rem, 60%);
 
-// Chrome, Safari, Opera 
-@-webkit-keyframes bounce {
-    0%, 100% {margin-top: 0px;}
-    50% {margin-top: 2rem;}
+@mixin bounce($margin) {
+   
+    // Chrome, Safari, Opera 
+    @-webkit-keyframes bounce {
+        0%, 100% {margin-top: 0px;}
+        50% {margin-top: $margin;}
+    }
+    // Standard syntax
+    @keyframes bounce {
+        0%, 100% {margin-top: 0px;}
+        50% {margin-top: $margin;}
+    }
 }
-// Standard syntax
-@keyframes bounce {
-    0%, 100% {margin-top: 0px;}
-    50% {margin-top: 2rem;}
-}
+
+@include bounce(2em);
 
 // Button
 
